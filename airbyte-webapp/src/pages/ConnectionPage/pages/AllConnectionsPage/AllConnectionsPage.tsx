@@ -4,9 +4,10 @@ import React, { Suspense } from "react";
 import { FormattedMessage } from "react-intl";
 import { useNavigate } from "react-router-dom";
 
-import { Button, LoadingPage, MainPageWithScroll, PageTitle } from "components";
+import { LoadingPage, MainPageWithScroll, PageTitle } from "components";
 import { EmptyResourceListView } from "components/EmptyResourceListView";
 import HeadTitle from "components/HeadTitle";
+import { Button } from "components/ui/Button";
 
 import { useTrackPage, PageTrackingCodes } from "hooks/services/Analytics";
 import { useConnectionList } from "hooks/services/useConnectionHook";

@@ -4,10 +4,11 @@ import React from "react";
 import { FormattedMessage } from "react-intl";
 import { useNavigate } from "react-router-dom";
 
-import { Button, MainPageWithScroll } from "components";
 import { EmptyResourceListView } from "components/EmptyResourceListView";
 import HeadTitle from "components/HeadTitle";
+import { MainPageWithScroll } from "components/MainPageWithScroll";
 import PageTitle from "components/PageTitle";
+import { Button } from "components/ui/Button";
 
 import { useTrackPage, PageTrackingCodes } from "hooks/services/Analytics";
 import { useSourceList } from "hooks/services/useSourceHook";
