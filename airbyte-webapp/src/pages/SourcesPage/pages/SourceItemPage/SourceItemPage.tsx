@@ -10,7 +10,7 @@ import LoadingPage from "components/LoadingPage";
 import PageTitle from "components/PageTitle";
 import Placeholder, { ResourceTypes } from "components/Placeholder";
 import { Breadcrumbs } from "components/ui/Breadcrumbs";
-import { DropDownRow } from "components/ui/DropDown";
+import { DropDownOptionDataItem } from "components/ui/DropDown";
 
 import { useTrackPage, PageTrackingCodes } from "hooks/services/Analytics";
 import { useConnectionList } from "hooks/services/useConnectionHook";
@@ -73,7 +73,7 @@ const SourceItemPage: React.FC = () => {
     navigate(path);
   };
 
-  const onSelect = (data: DropDownRow.IDataItem) => {
+  const onSelect = (data: DropDownOptionDataItem) => {
     const path = `../${RoutePaths.ConnectionNew}`;
     const state =
       data.value === "create-new-item"
