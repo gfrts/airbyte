@@ -1,6 +1,6 @@
 import { FormattedMessage, useIntl } from "react-intl";
 
-import Button from "components/base/Button";
+import { Button } from "components/base/Button";
 import { Text } from "components/base/Text";
 
 import { useExperiment } from "hooks/services/Experiment";
@@ -28,7 +28,7 @@ const InviteUsersHintContent: React.VFC<InviteUsersHintProps> = ({ connectorType
   ) : (
     <Button
       data-testid="inviteUsersHint-cta"
-      secondary
+      variant="secondary"
       onClick={() => {
         toggleInviteUsersModalOpen();
       }}
